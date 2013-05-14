@@ -1,0 +1,23 @@
+development: &default
+  session_secret: 'fe0e5b6cb82e9e33dfdb1a93c0661a37470232e98ebc2b03e4c7fed141926b4d'
+  site_url: 'http://localhost:3000'
+  site_title: '小狼窝'
+  site_motto: 'Small is beautiful, constraint is liberty.'
+  site_description: '几个前厂工程师的技术分享site'
+  show_certification: true
+  show_me_url: 'http://192.168.169.129/blog/28/about-robbin'
+  blog_search_ping: false
+  google_cse: '007540752216561218107:cgbwg20yn_o'
+  weibo_api_key: '1234567890'
+  weibo_api_secret: '1234567890'
+  weibo_redirect_uri: 'http://localhost/weibo_callback'
+  weibo_uid: '1768502967'
+  weibo_uid_verifier: '8e94b428'
+  
+test: 
+  <<: *default
+
+production:
+  <<: *default
+  site_url: 'http://localhost'
+  blog_search_ping: true
